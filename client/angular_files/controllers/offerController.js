@@ -5,10 +5,11 @@
     .module('myApp')
     .controller('offerController', Controller)
 
-  function Controller(offerFactory, $location, $routeParams) {
+  function Controller(offerFactory, $location, $routeParams, $scope) {
     var self = this
     self.index = function(){
-      data = "hi"
+      console.log(self.offer)
+      var data = "hi"
       offerFactory.index(data, function(returnData){
       })
       console.log('hi')
