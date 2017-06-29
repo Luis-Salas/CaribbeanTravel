@@ -8,11 +8,9 @@
   function Controller(offerFactory, $location, $routeParams, $scope) {
     var self = this
     self.index = function(){
-      console.log(self.offer)
-      var data = "hi"
-      offerFactory.index(data, function(returnData){
+      offerFactory.index(self.offer, function(returnData){
+        console.log(returnData)
       })
-      console.log('hi')
   }
 }
 })()

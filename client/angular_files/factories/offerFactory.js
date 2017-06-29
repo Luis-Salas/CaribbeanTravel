@@ -8,8 +8,10 @@
     var factory = {}
 
     factory.index = function(data){
-      console.log('here')
       console.log(data)
+      $http.post('/offers', data).then(function(returnData){
+
+      })
     }
     return factory
 }
