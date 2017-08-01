@@ -1,6 +1,6 @@
-const offer = require('../controllers/offersBE.js')
+const offer = require('../controllers/BEoffer.js')
 
 
 module.exports = function(app){
-  app.post('/offers', offer.index)
+  app.post('/offer', offer.index)
 }
